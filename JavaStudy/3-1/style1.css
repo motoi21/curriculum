@@ -1,0 +1,40 @@
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.wrapper {
+  margin: auto;
+  width: 400px;
+}
+.header {
+  height: 100px;
+  background-color: #141f40;
+}
+.main {
+  height: 250px;
+}
+.left {
+  height: 250px;
+  width: 150px;
+  background-color: #80bfa8;
+  float: left;
+}
+.right {
+  height: 250px;
+  width: 250px;
+  background-color: #8c2727;
+  float: left;
+}
+.footer {
+  height: 100px;
+  background-color: #d98d30;
+}
+p {
+  color: black;
+}
+/* reset.css */
+* {
+  margin: 0;
+  padding: 0;
+}
