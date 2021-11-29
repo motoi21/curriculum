@@ -145,13 +145,12 @@ public abstract class BaseServlet extends HttpServlet {
         final String reqEmpId = request.getParameter("empId").trim();
         final String reqPassword = request.getParameter("password").trim();
 
-        EmployeeBean empBean = new EmployeeBean(reqEmpId);
-
         try {
             // FIXME Step-3-3: 社員情報管理サービスより、社員情報を取得する処理を呼び出しなさい。
             // Tips1: 社員情報管理サービスはインスタンスが生成済みのものを利用すること
             // Tips2: 完全一致検索の社員情報取得を呼び出すこと
             // Tips3: 第二引数の渡し方に注意すること
+        	EmployeeBean empBean = new EmployeeBean(reqEmpId);
             responseBean = ems.getEmployeeData(ExecuteCase.FIND_BY_EMPID, empBean);
 
             // 最初の1件を取得
